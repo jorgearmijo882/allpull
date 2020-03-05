@@ -6,7 +6,7 @@
 CUR_DIR=$(pwd)
 
 # Mensaje de pull
-echo "Pulling All repositories"
+echo "Bajando los repositorios"
 
 # busca los directorios y hace un pull de todos al master registrado
 for i in $(find . -name ".git" | cut -c 3-); do
@@ -21,4 +21,4 @@ for i in $(find . -name ".git" | cut -c 3-); do
     # regresa al directorio principal
     cd $CUR_DIR
 done
-echo "Pulling All repositories Complete"
+echo "Descarga de todos los repositorios bajados"
